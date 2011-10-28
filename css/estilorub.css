@@ -110,12 +110,23 @@
 	height:60px;
 	background:#fff;
 }
-.contenfile
+.contenfile1
 {	margin:0 auto;
 	padding:0px;	
 	width:988px;
 	height:100px;
 	background:#fff;
+	/*margin:5px 0px 5px 0px;*/
+	border:solid 1px #fff;
+	
+}
+
+.contenfile2
+{	margin:0 auto;
+	padding:0px;	
+	width:988px;
+	height:100px;
+	background:#eee;
 	/*margin:5px 0px 5px 0px;*/
 	border:solid 1px #fff;
 	
@@ -130,7 +141,7 @@
 			}
 			.text
 			{
-				 width:838px;
+				 width:738px;
 				 height:80px;
 				 float:left; 
 				 margin: 10px 10px 10px 40px;
@@ -139,13 +150,23 @@
 			}
 			.texttitulo
 			{
-				 width:804px;
+				 width:738px;
 				 height:20px;
 				 float:left;
 				 font-size:18px;
 				 line-height:20px;
 				 color:#53565d; 
 				 text-align:left;
+			}
+			
+			.iconodescraga
+			{
+				 width:80px;
+				 height:80px;
+				 float:left; 
+				 margin:10px;
+				/*background:url(../imagen/descargar.png);
+				background-repeat:no-repeat;*/
 			}
 
 .footer

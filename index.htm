@@ -41,27 +41,42 @@ Municipalidad Provincial de Humanga
 
 
 <div class="mapconten">
-<div id='intro-map'></div>
+
+
+///fullScream no funciona..
+<div id='map-div'></div>
 <script>
     var mm = com.modestmaps;
-    var url = 'http://tiles.mapbox.com/ruben/map/Ayacucho-osm-bright_be64eb';
+    wax.tilejson('http://tiles.mapbox.com/ruben/api/Tileset/Ayacucho-osm-bright_be64eb',
+  function(tilejson) {
+      var m = new mm.Map('map-div', new wax.mm.connector(tilejson));
 
-    wax.tilejson(url, function(tilejson) {
-        var m = new mm.Map('intro-map',
-    new wax.mm.connector(tilejson),
-    new mm.Point(990, 480));
-
-        m.setCenterZoom(new mm.Location(tilejson.center[1],
-    tilejson.center[0]),
-    tilejson.center[2] - 3);
-
-        wax.mm.zoomer(m).appendTo(m.parent);
-        wax.mm.interaction(m);
-    });
+      wax.mm.fullscreen(m, tilejson).appendTo(m.parent);
+      m.setCenterZoom(new mm.Location(39, -98), 2);
+  });
 </script>
 
 
+
+<!--<div id='intro-map'></div>
+<script>
+    var mm = com.modestmaps;
+    var url = 'http://tiles.mapbox.com/ruben/api/Tileset/Ayacucho-osm-bright_be64eb';
+
+    wax.tilejson(url, function(tilejson) {
+        var m = new mm.Map('intro-map', new wax.mm.connector(tilejson),new mm.Point(990, 480));
+        m.setCenterZoom(new mm.Location(tilejson.center[1],
+         tilejson.center[0]),
+         tilejson.center[2] - 3);
+            wax.mm.zoomer(m).appendTo(m.parent);
+            wax.mm.interaction(m);
+    });
+</script>
+-->
+
+
 </div>
+
 <div class="conteninfor">
         <div class="cont">
                 <div class="contenheader2">
@@ -102,7 +117,7 @@ Municipalidad Provincial de Humanga
  
 </div>
 <div class="coment">Archivos optenidos gracias a la gerencia de catastro y gerencia de trasporte de la municipalidad provincial de humanga</div>
-<div class="contenfile">
+<div class="contenfile1">
 <div class="imgcontenfile">
     <img src="imagenfile/1_Manzanas.png" />
 </div>
@@ -111,8 +126,11 @@ Municipalidad Provincial de Humanga
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
 </div>
+<div class=iconodescraga>
+<a href=#><img src="imagen/descargar.png" /></a>
 </div>
-<div class="contenfile">
+</div>
+<div class="contenfile2">
 <div class="imgcontenfile">
     <img src="imagenfile/1_Manzanas.png" />
 </div>
@@ -120,6 +138,22 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum 
 <div class="texttitulo"> Archivode Manzanas de la ciudad dfe humanga</div>
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+</div>
+<div class=iconodescraga>
+<a href=#><img src="imagen/descargar.png" /></a>
+</div>
+</div>
+<div class="contenfile1">
+<div class="imgcontenfile">
+    <img src="imagenfile/1_Manzanas.png" />
+</div>
+<div class="text">
+<div class="texttitulo"> Archivode Manzanas de la ciudad dfe humanga</div>
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+</div>
+<div class=iconodescraga>
+<a href=#><img src="imagen/descargar.png" /></a>
 </div>
 </div>
 
