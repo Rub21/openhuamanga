@@ -16,7 +16,7 @@
 Municipalidad Provincial de Humanga
 </div>
 <div class="cabeceratexto2">
-<script type="text/javascript">
+<!--<script type="text/javascript">
 			<!--
     var mydate = new Date();
     var year = mydate.getYear();
@@ -30,8 +30,8 @@ Municipalidad Provincial de Humanga
     var dayarray = new Array("Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado");
     var montharray = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
     document.write("" + dayarray[day] + ", " + daym + " de " + montharray[month] + " del " + year + "");
-			//-->
-</script>
+			
+</script>-->
 </div>
 <div class="cabeceratexto3"> RUTAS VIALES DE TRANSPORTE</div>
 </div>
@@ -44,27 +44,10 @@ Municipalidad Provincial de Humanga
 
 <div class="mapconten">
 
-
-///fullScream no funciona
-<div id='map-div'></div>
+<div id='intro-map'></div>
 <script>
     var mm = com.modestmaps;
-    wax.tilejson('http://tiles.mapbox.com/ruben/api/Tileset/Ayacucho-osm-bright_be64eb',
-  function(tilejson) {
-      var m = new mm.Map('map-div', new wax.mm.connector(tilejson));
-
-      wax.mm.fullscreen(m, tilejson).appendTo(m.parent);
-      m.setCenterZoom(new mm.Location(39, -98), 2);
-  });
-</script>
-
-
-
-<!--<div id='intro-map'></div>
-<script>
-    var mm = com.modestmaps;
-    var url = 'http://tiles.mapbox.com/ruben/api/Tileset/Ayacucho-osm-bright_be64eb';
-
+    var url = 'http://tiles.mapbox.com/ruben/api/Tileset/map-b90kh9hs';
     wax.tilejson(url, function(tilejson) {
         var m = new mm.Map('intro-map', new wax.mm.connector(tilejson),new mm.Point(990, 480));
         m.setCenterZoom(new mm.Location(tilejson.center[1],
@@ -74,15 +57,19 @@ Municipalidad Provincial de Humanga
             wax.mm.interaction(m);
     });
 </script>
--->
 
 
+
+</div>
+<div class="coment">
+AGRADECIMIENTO A LAS GERENCIAS DE CATASTRO Y GERENCIA DE TRANSPORTES DE LA MUNICIPALIDAD PROVINCIAL DE HUAMANGA POR BRIDAR LOS ARCHIVOS Y HACER POSIBLE ESTA APLICACIÓN.
+<!--Agradecimiento a las gerencias de catastro y gerencia de transportes de la municipalidad provincial de huamanga por bridar los archivos y hacer posible esta aplicación.-->
 </div>
 
 <div class="conteninfor">
         <div class="cont">
                 <div class="contenheader2">
-                Lorem ipsum dolor sit amet
+                Ley de transparencia y acceso a la información pública
                 </div>
                 
                 <div class="contenbody2">
@@ -118,47 +105,40 @@ Municipalidad Provincial de Humanga
         </div>
  
 </div>
-<div class="coment">Archivos optenidos gracias a la gerencia de catastro y gerencia de trasporte de la municipalidad provincial de humanga</div>
-<div class="contenfile1">
-<div class="imgcontenfile">
-    <img src="imagenfile/1_Manzanas.png" />
-</div>
-<div class="text">
-<div class="texttitulo"> Archivode Manzanas de la ciudad dfe humanga</div>
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+
+<div class="tablaheader">
+
+<div class="showimagen">Imagen</div>
+<div class="showcategoria">Categoria</div>
+<div class="showtexto">Descripción</div>
+<div class="showdescarga">Descargas</div>
+
 </div>
-<div class=iconodescraga>
+
+
+<div class="contenfile1">
+<div class="imgcontenfile"><img src="imagenfile/1_Manzanas.png" /></div>
+<div class="categoria">Plano Base Ayacucho</div>
+<div class="texto">
+<div class="texttitulo">Manzanas</div>
+Manzanas de la Ciudad de Ayacucho formado por sus 4 distritos Ayacucho,Carmen Alto,San Juan Bautista y Jesús Nazareno
+</div>
+<div class=descarga>
 <a href=#><img src="imagen/descargar.png" /></a>
 </div>
 </div>
 <div class="contenfile2">
-<div class="imgcontenfile">
-    <img src="imagenfile/1_Manzanas.png" />
+<div class="imgcontenfile"><img src="imagenfile/1_Manzanas.png" /></div>
+<div class="categoria">Plano Base Ayacucho</div>
+<div class="texto">
+<div class="texttitulo">Nombre de Urbanizacion y Distritos</div>
+Nombre de las Urbanizaciones y de los 4 Distritos de la Ciudad de Ayacucho
 </div>
-<div class="text">
-<div class="texttitulo"> Archivode Manzanas de la ciudad dfe humanga</div>
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-</div>
-<div class=iconodescraga>
+<div class=descarga>
 <a href=#><img src="imagen/descargar.png" /></a>
 </div>
 </div>
-<div class="contenfile1">
-<div class="imgcontenfile">
-    <img src="imagenfile/1_Manzanas.png" />
-</div>
-<div class="text">
-<div class="texttitulo"> Archivode Manzanas de la ciudad dfe humanga</div>
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-</div>
-<div class=iconodescraga>
-<a href=#><img src="imagen/descargar.png" /></a>
-</div>
-</div>
-
 <div class="footer">rtr
 </div>
 
