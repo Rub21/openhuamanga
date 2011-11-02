@@ -11,33 +11,16 @@
 a:link 
 { 
 	text-decoration:none;
-	font-family: arial;
-	font-size: 14px;
-	color: #fff;
-	font-weight:bold;
+	color:#111;	
 } 
-a:visited 
-{
-	
-	font-family: arial; 
-	font-size: 14px;
-	color: #fff;
-	font-weight:bold;
-} 
+ 
 a:hover  
 {
 	text-decoration:underline;
-	font-family: arial;
-	font-size: 14px;
-	color: #ff; 
-	font-weight:bold;
+	color:#111;
+
 } 
-a:active { 
-	font-family: arial;
-	font-size: 14px;
-	color: #fff; 
-	font-weight:bold;
-	}
+
 /*****************************/
 .cabecera	
 {
@@ -59,10 +42,11 @@ a:active {
 
 .cabeceratexto1
 {
-	width:690px;font-family:"Lucida Bright","Times New Roman",Times,serif;
+	width:690px;
+	font-family:"Lucida Bright","Times New Roman",Times,serif;
 	text-align:left;
 	float:left;
-	font-style:italic;
+	
 	color:#abbdd4;
 	font-size:11px;
 	height:20px;
@@ -94,8 +78,8 @@ a:active {
 .mapconten{
 	margin:0 auto;
 	padding:0px;	
-	width:990px;
-	height:485px;	
+	width:100%;
+	height:400px;	
 	background:#fff;
 	clear:both;
 	
@@ -107,6 +91,7 @@ a:active {
 	width:990px;
 	height:50px;	
 	background:#ddd;
+	
 		
 }
 .showimagen
@@ -119,7 +104,7 @@ a:active {
 }
 .showcategoria
 {
-	width:100px;
+	width:195px;
 	height:30px;
 	float:left; 
 	margin: 10px;
@@ -164,9 +149,10 @@ a:active {
 	margin:0px 0px 0px 0px;
 	padding:0px;	
 	width:990px;
-	height:320px;
+	height:450px;
 	margin:0 auto;
 	background:#fff;
+	clear:both;
 	
 }               
 
@@ -174,7 +160,7 @@ a:active {
 {	
 	margin:10px;
 	width:308px;
-	height:298px;
+	height:348px;
 	float:left;
 	border:solid 1px #fff;
 	background:#fff;
@@ -185,7 +171,7 @@ a:active {
 	/*background:url(../imagen/header2.jpg) repeat-x scroll left top;*/
 	width:306px;
 	height:auto;
-	color:#abbdd4;
+	color:#111;
 	font-size:20px;
 	line-height:40px;
 	padding-left:2px;
@@ -193,7 +179,7 @@ a:active {
 .contenbody2
 {
 	width:300px;
-	height:256px;
+	height:306px;
 	padding:2px;
 	text-align:justify;
 	color:#555;
@@ -206,7 +192,7 @@ a:active {
 	padding-top:10px;	
 	width:990px;
 	height:auto;
-	background:#eee;
+	background:url(../imagen/banner-bg.png) repeat-x scroll left top;
 	font-size:18px;
 }
 .contenfile1
@@ -216,6 +202,7 @@ a:active {
 	width:990px;
 	height:100px;	
 	background:#fff;
+	clear:both;
 }
 
 .contenfile2
@@ -243,11 +230,12 @@ a:active {
 	text-align:center;				
 }
 .categoria
-{	width:100px;
+{	width:195px;
 	height:80px;
 	float:left; 
 	margin: 10px;
 	text-align:center;
+	line-height:80px;
 	
 }
 .texto

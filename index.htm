@@ -13,7 +13,7 @@
 <div class="cabecera">
 <div class="subcabecera">
 <div class="cabeceratexto1">
-    <img src="imagen/MunicipalidadHumanga.png" />Municipalidad Provincial de Humanga
+Municipalidad Provincial de Humanga
 </div>
 <div class="cabeceratexto2">
 <!--<script type="text/javascript">
@@ -33,7 +33,7 @@
 			
 </script>-->
 </div>
-<div class="cabeceratexto3"> RUTAS VIALES DE TRANSPORTE</div>
+<div class="cabeceratexto3"> Transporte público Huamanga</div>
 </div>
 
 
@@ -43,16 +43,15 @@
 
 
 <div class="mapconten">
-
 <div id='intro-map'></div>
 <script>
     var mm = com.modestmaps;
-    var url = 'http://tiles.mapbox.com/ruben/api/Tileset/map-b90kh9hs';
+    var url = 'http://tiles.mapbox.com/ruben/api/Tileset/map-jh1ct0vc';
     wax.tilejson(url, function(tilejson) {
-        var m = new mm.Map('intro-map', new wax.mm.connector(tilejson),new mm.Point(990, 480));
+        var m = new mm.Map('intro-map', new wax.mm.connector(tilejson),new mm.Point(2000, 400));
         m.setCenterZoom(new mm.Location(tilejson.center[1],
          tilejson.center[0]),
-         tilejson.center[2] - 2);
+         tilejson.center[2]-2);
             wax.mm.zoomer(m).appendTo(m.parent);
             wax.mm.interaction(m);
     });
@@ -62,9 +61,7 @@
 
 </div>
 <div class="coment">
-AGRADECIMIENTO A LAS GERENCIAS DE CATASTRO Y GERENCIA DE TRANSPORTES DE LA MUNICIPALIDAD PROVINCIAL DE HUAMANGA POR BRIDAR LOS ARCHIVOS Y HACER POSIBLE ESTA APLICACIÓN.
-<!--Agradecimiento a las gerencias de catastro y gerencia de transportes de la municipalidad provincial de huamanga por bridar los archivos y hacer posible esta aplicación.-->
-</div>
+Mapa interactivo de transporte público urbano de la ciudad de Ayacucho </div>
 
 <div class="conteninfor">
         <div class="cont">
@@ -73,46 +70,39 @@ AGRADECIMIENTO A LAS GERENCIAS DE CATASTRO Y GERENCIA DE TRANSPORTES DE LA MUNIC
                 </div>
                 
                 <div class="contenbody2">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce 
-                ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor. 
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor
-                </div>
+                Las entidades de la Administración Pública tienen la obligación de proveer la información en cualquier formato requerido, siempre que haya sido creada u obtenida por ella o que se encuentre en su posesión o bajo su control. Asimismo, para los efectos de esta Ley, se considera como información pública cualquier tipo de documentación financiada por el presupuesto público. Que sirva de base a una decisión de naturaleza administrativa.</div>
         </div>
 
 
+   
         <div class="cont">
                 <div class="contenheader2">
-                Lorem ipsum dolor sit amet
+                Datos Abiertos en la municipalidad de  Huamanga
                 </div>
                 
                 <div class="contenbody2">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce 
-                ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor. 
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor
-                </div>
+                Los Datos Abiertos constituyen una iniciativa de más que la transparencia de un buen gobierno, través del cual los datos que son producidos por la administración pública son de libre acceso para las comunidades de usuarios, exceptuando aquellos por razones de seguridad y privacidad previstas en la normatividad vigente. A través de esta apertura se busca la participación y colaboración de las comunidades de usuarios para la identificación de oportunidades y desarrollo de soluciones basadas en el uso de las nuevas tecnologías.
+                
+                 </div>
+
         </div>
-        <div class="cont">
+             <div class="cont">
                 <div class="contenheader2">
-                Lorem ipsum dolor sit amet
+            Implementación de aplicaciones con Datos Abiertos
                 </div>
                 
                 <div class="contenbody2">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce 
-                ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor. 
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor
-                </div>
-
-        </div>
- 
+              
+Gracias al acceso de algunos datos otorgados por la municipalidad provincial de Huamanga  se realiza una la pequeña  aplicación de  “Mapa interactivo de transporte público urbano de la ciudad de Ayacucho” con el cual se pretende facilitar a mejor panorama  de la circulación del trasporte urbano, los recorridos por donde estos cubren  en la ciudad de Ayacucho.
+</div>
 </div>
 
-
+</div>
 <div class="tablaheader">
 
 <div class="showimagen">Imagen</div>
 <div class="showcategoria">Categoria</div>
 <div class="showtexto">Descripción</div>
-<div class="showdescarga">Descargas</div>
 
 </div>
 
@@ -121,255 +111,207 @@ AGRADECIMIENTO A LAS GERENCIAS DE CATASTRO Y GERENCIA DE TRANSPORTES DE LA MUNIC
 <div class="imgcontenfile"><img src="imagenfile/1_Manzanas.png" /></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Manzanas</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/manzanas.zip">Manzanas</a></div>
 Manzanas de la Ciudad de Ayacucho formado por sus 4 distritos Ayacucho,Carmen Alto,San Juan Bautista y Jesús Nazareno
-</div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/manzanas.zip"><img src="imagen/descargar.png" /></a>
 </div>
 </div>
 <div class="contenfile2">
 <div class="imgcontenfile"><img src="imagenfile/2_Nombre_Urbanizacion_Distritos.png" /></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Nombre de Urbanizacion y Distritos</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/nombre_urbanizaciones_distritos.zip">Nombre de Urbanizacion y Distritos</a></div>
 Nombre de las Urbanizaciones y  de los 4 Distritos de la Ciudad de Ayacucho
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/nombre_urbanizaciones_distritos.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile1">
 <div class="imgcontenfile"><img src="imagenfile/4_Parques.png" /></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Parques</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/parques.zip">Parques</a></div>
 Muestra todos los parques de la ciudad de Ayacucho y los 4 distritos
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/parques.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile2">
 <div class="imgcontenfile"><img src="imagenfile/5_Areas_Paisajistas.png" /></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Areas Paisajistas</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/areas_paisajistas.zip">Areas Paisajistas</a></div>
 Muestra las áreas forestadas de la cuidad
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/areas_paisajistas.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile1">
 <div class="imgcontenfile"><img src="imagenfile/6_Areas_Verdes.png" /></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Areas Verdes</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/areas_verdes.zip">Areas Verdes</a></div>
 Muestra las áreas forestadas de la cuidad
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/areas_verdes.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile2">
 <div class="imgcontenfile"><img src="imagenfile/7_aeropuerto.png" /></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Aeropuerto</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/aeropuerto.zip">Aeropuerto</a></div>
 Muestra el aeropuerto de la ciudad de Ayacucho
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/aeropuerto.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile1">
 <div class="imgcontenfile"><img src="imagenfile/8_Rios.png" /></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Ríos</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/rios.zip">Ríos</a></div>
 Muestra los rios en toda la ciudad de Ayacucho
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/rios.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile2">
 <div class="imgcontenfile"><img src="imagenfile/9_Zonas_Arqueologicas.png" /></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Zonas Arqueológicas</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/zonas_arqueologicas.zip">Zonas Arqueológicas</a></div>
 Muestra las zonas arqueológicas de la Ciudad</div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/zonas_arqueologicas.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile1">
 <div class="imgcontenfile"><img src="imagenfile/10_Centro_salud.png" /></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Centro de salud</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/centro_salud.zip">Centro de salud</a></div>
 Muestra los centros de Salud de la Ciudad 
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/centro_salud.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile2">
 <div class="imgcontenfile"><img src="imagenfile/11_Centro_Comercio.png" /></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Centro de Comercio</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/centro_comercio.zip">Centro de Comercio</a></div>
 Muestra las zonas arqueológicas de la Ciudad</div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/centro_comercio.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile1">
 <div class="imgcontenfile"><img src="imagenfile/12_Centro_Educacion.png" /></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Centro de Educación</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/centro_educacion.zip">Centro de Educación</a></div>
 Muestra  escuelas, colegios y la universidad del la cuidad
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/centro_educacion.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile2">
 <div class="imgcontenfile"><img src="imagenfile/11_Centro_Comercio.png"/></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Centro de Comercio</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/centro_comercio.zip">Centro de Comercio</a></div>
 Muestra las zonas arqueológicas de la Ciudad</div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/centro_comercio.zip"><img src="imagen/descargar.png" /></a>
-</div>
 </div>
 <div class="contenfile1">
 <div class="imgcontenfile"><img src="imagenfile/13_Losas_deportivas.png"/></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Losas deportivas</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/losas_deportivas.zip">Losas deportivas</a></div>
 Muestra la mayoria de losas deportivas de la ciudad</div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/losas_deportivas.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile2">
 <div class="imgcontenfile"><img src="imagenfile/14_Aguas_Servidas.png"/></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Aguas Servidas</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/aguas_servidas.zip">Aguas Servidas</a></div>
 Muestra los centro de tratamiento de aguas de la ciudad</div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/aguas_servidas.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile1">
 <div class="imgcontenfile"><img src="imagenfile/3_Nombre_Calles_linea.png"/></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Nombre de Calles-linea</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/nombre_calles_lines.zip">Nombre de Calles-linea</a>
+</div>
 Muestra las denominaciones de las calles en formato linea
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/nombre_calles_lines.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile2">
 <div class="imgcontenfile"><img src="imagenfile/3_Nombre_Calles_texto.png"/></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Nombre de Calles-texto</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/nombre_calles_texto.zip">Nombre de Calles-texto</a></div>
 Muestra las denominaciones de las calles en formato texto</div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/nombre_calles_texto.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile1">
 <div class="imgcontenfile"><img src="imagenfile/3_Nombre_Calles_linea.png"/></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Nombre de Calles-linea</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/nombre_calles_lines.zip">Nombre de Calles-linea</a>
+</div>
 Muestra las denominaciones de las calles en formato linea
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/nombre_calles_lines.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile2">
 <div class="imgcontenfile"><img src="imagenfile/15_Nombres_Insituciones_otros.png"/></div>
 <div class="categoria">Plano Base Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Nombre de instituciones y otros</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/nombre_instituciones_otros.zip">Nombre de instituciones y otros</a></div>
 Muestra las denominaciones de instituciones ,estadios,etc.</div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/nombre_instituciones_otros.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile1">
 <div class="imgcontenfile"><img src="imagenfile/Via_Anillo_Central.png"/></div>
 <div class="categoria">Vias Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Via Anillo Central</div>
-via alrededor del centro historico de Humanga
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/via_anillo_central.zip">Via Anillo Central</a>
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/via_anillo_central.zip"><img src="imagen/descargar.png" /></a>
+via alrededor del centro historico de Humanga
 </div>
 </div>
 <div class="contenfile2">
 <div class="imgcontenfile"><img src="imagenfile/Via_Intermedia.png"/></div>
 <div class="categoria">Vias Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Via Intermedia</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/via_intermedia.zip">Via Intermedia</a></div>
 Muestra la via alterna,despues del anillo central del centro historico</div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/via_intermedia.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile1">
 <div class="imgcontenfile"><img src="imagenfile/Via_Alterna.png"/></div>
 <div class="categoria">Vias Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Via Alterna</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/via_alterna.zip">Via Alterna</a>
+</div>
 Muestra la via alterna despues de la via intermedia de la Ciudad
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/via_anillo_central.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile2">
 <div class="imgcontenfile"><img src="imagenfile/Via_InterRegional.png"/></div>
 <div class="categoria">Vias Ayacucho</div>
 <div class="texto">
-<div class="texttitulo">Via InterRegional</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/via_interregional.zip">Via InterRegional</a></div>
 Mustra las vias interregional ,medio de comunicacion con otras regiones</div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/via_interregional.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 <div class="contenfile1">
 <div class="imgcontenfile"><img src="imagenfile/rutas.png"/></div>
 <div class="categoria">Rutas de transporte</div>
 <div class="texto">
-<div class="texttitulo">Rutas de trasporte urbano</div>
+<div class="texttitulo"><a href="http://s3.amazonaws.com/opendata-ayacucho/geo/rutas_original.zip">Rutas de trasporte urbano</a>
+</div>
 Muestra la rutas de trasporte actualizados aproximadamente hasta en 2009-proyeccion plano base Ayacucho
 </div>
-<div class=descarga>
-<a href="http://s3.amazonaws.com/opendata-ayacucho/geo/rutas_original.zip"><img src="imagen/descargar.png" /></a>
-</div>
+
 </div>
 
-<div class="footer">
-<h2>&nbsp;</h2>
-        <h2>&nbsp;</h2>
-        <h2>OPEN DATA-Municipalidad Provincial de Humanga</h2>
-    <br />
-    <a target="_blank" href="http://mapbox.com/">Hosting Maps</a>
+<!--
+<div class="footer">rtr
 </div>
-
+-->
 
 </body>
 </html>
