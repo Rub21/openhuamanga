@@ -3,7 +3,7 @@
 	margin:0px;
 	padding:0px;
 	font:normal 16px/25px Georgia,serif;
-	background-image:url(../imagen/noiser.png);
+	/*background-image:url(../imagen/noiser.png);*/
 	color:#000;
 	/*background:#eeeeee;*/
 }
@@ -20,6 +20,16 @@ a:hover
 	color:#111;
 
 } 
+
+h2 {
+	position:relative;
+	top:10px;
+	font-size:22px;
+	text-align:center;
+	border-top:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	padding:22px 0;
+}
 
 /*****************************/
 .cabecera	
@@ -149,7 +159,7 @@ a:hover
 	margin:0px 0px 0px 0px;
 	padding:0px;	
 	width:990px;
-	height:450px;
+	height:367px;
 	margin:0 auto;
 	background:#fff;
 	clear:both;
@@ -188,12 +198,12 @@ a:hover
 
 .coment
 {	
-	margin:0 auto;
-	padding-top:10px;	
+	margin:20px auto;
 	width:990px;
-	height:auto;
+	height:100px;
 	background:url(../imagen/banner-bg.png) repeat-x scroll left top;
 	font-size:18px;
+	text-align:center;
 }
 .contenfile1
 {	
@@ -279,4 +289,13 @@ a:hover
 	
 }
 
-               
+.texttooter
+{
+	margin: 20px auto;
+	padding:0px;	
+    width:990px;
+    height:20px;
+    font-size:8pt;
+    text-align:center;
+    line-height:20px;    
+ }     
