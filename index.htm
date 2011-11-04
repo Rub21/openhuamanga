@@ -44,7 +44,7 @@ Municipalidad Provincial de Humanga
 
 <div class="mapconten">
 
-
+<!--
 <div id='intro-map'></div>
 <script>
     var mm = com.modestmaps;
@@ -57,9 +57,19 @@ Municipalidad Provincial de Humanga
             wax.mm.zoomer(m).appendTo(m.parent);
             wax.mm.interaction(m);
     });
+</script>-->
+
+<div id='map-div'></div>
+<script>
+    var mm = com.modestmaps;
+    wax.tilejson('http://tiles.mapbox.com/ruben/api/Tileset/map-592sxtoe',
+  function(tilejson) {
+      var m = new mm.Map('map-div',new wax.mm.connector(tilejson),new mm.Point(2000, 400));
+      wax.mm.interaction(m, tilejson);
+      m.setCenterZoom(new mm.Location(-13.16, -74.22), 17);/*importante sobre la proyeccion ..tienes que ver en google  ue proyeccion es */
+  }
+);
 </script>
-
-
 
 </div>
 <!--<div class="coment">
