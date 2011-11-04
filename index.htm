@@ -8,6 +8,42 @@
     <link href='wax/theme/controls.css' rel='stylesheet' type='text/css'/>
         
 </head>
+
+
+
+<script>
+
+        mm = com.modestmaps;
+        wax.tilejson('http://tiles.mapbox.com/ruben/api/Tileset/map-592sxtoe',
+  function(tilejson) {
+      var m = new mm.Map('map-div', new wax.mm.connector(tilejson), new mm.Point(2000, 400));
+      wax.mm.interaction(m, tilejson);
+      wax.mm.fullscreen(m, tilejson).appendTo(m.parent);
+      m.setCenterZoom(new mm.Location(-13.159725, -74.22431), 17); /*importante sobre la proyeccion ..tienes que ver en google  ue proyeccion es */
+  }
+);
+
+</script>
+
+<script>
+    function fullscream() {
+    
+        mm = com.modestmaps;
+        wax.tilejson('http://tiles.mapbox.com/ruben/api/Tileset/map-592sxtoe',
+  function(tilejson) {
+      var m = new mm.Map('map-div', new wax.mm.connector(tilejson), new mm.Point(2000, 400));
+      wax.mm.interaction(m, tilejson);
+     
+      m.setCenterZoom(new mm.Location(-13.159725, -74.22431), 17); /*importante sobre la proyeccion ..tienes que ver en google  ue proyeccion es */
+  }
+);
+        
+    }
+</script>
+
+
+
+
 <body>
 
 <div class="cabecera">
@@ -70,6 +106,11 @@ Municipalidad Provincial de Humanga
   }
 );
 </script>
+
+
+<div id='map-div'>
+
+</div>
 
 </div>
 <!--<div class="coment">
