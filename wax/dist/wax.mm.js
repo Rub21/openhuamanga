@@ -1002,7 +1002,7 @@ wax.mm.fullscreen = function(map) {
         a = document.createElement('a');
         a.className = 'wax-fullscreen';
         a.href = '#fullscreen';
-        a.innerHTML = 'fullscreen';
+        a.innerHTML = 'Pantalla Completa';
         com.modestmaps.addEvent(a, 'click', click);
         return this;
     };
