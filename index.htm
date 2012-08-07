@@ -14,7 +14,7 @@
 <script>
 
         mm = com.modestmaps;
-        wax.tilejson('http://tiles.mapbox.com/ruben/api/Tileset/map-592sxtoe',
+        wax.tilejson('',
   function(tilejson) {
       var m = new mm.Map('map-div', new wax.mm.connector(tilejson), new mm.Point(2000, 400));
       wax.mm.interaction(m, tilejson);
@@ -29,7 +29,7 @@
     function fullscream() {
     
         mm = com.modestmaps;
-        wax.tilejson('http://tiles.mapbox.com/ruben/api/Tileset/map-592sxtoe',
+        wax.tilejson('',
   function(tilejson) {
       var m = new mm.Map('map-div', new wax.mm.connector(tilejson), new mm.Point(2000, 400));
       wax.mm.interaction(m, tilejson);
